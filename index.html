@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do_List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="to-do-list">
+      <div class="to-do-list__header-inner">
+        <p class="to-do-list__current-date">22.06.2022</p>
+        <p class="to-do-list__current-weekday">ПТ</p>
+        <button class="to-do-list__delete-button" type="button">+</button>
+        <div class="to-do-list__tasks-info">
+          <span>Tasks</span>
+          <span class="to-do-list__tasks-count">2/4</span>
+        </div>
+      </div>
+
+      <div class="content">
+        <form class="content__add">
+          <input
+            type="textbox"
+            name="content__add"
+            placeholder="Введите текст"
+          />
+          <button type="button" class="content__add-button"></button>
+        </form>
+        <ul class="content__todos-list">
+          <li>
+            <input type="checkbox" id="content__todo-1" />
+            <label for="content__todo-1">
+              <span class="content__check"></span>
+              Сходить за покупками
+            </label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="content__todo-2" />
+            <label for="content__todo-2">
+              <span class="content__check"></span>
+              Сходить в зал
+            </label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="content__todo-3" />
+            <label for="content__todo-3">
+              <span class="content__check"></span>
+              Погулять с собакой
+            </label>
+          </li>
+
+          <li>
+            <input type="checkbox" id="content__todo-4" />
+            <label for="content__todo-4">
+              <span class="content__check"></span>
+              Купить порш
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
